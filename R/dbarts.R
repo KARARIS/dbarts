@@ -562,7 +562,7 @@ dbartsSampler <-
                   
                   cutPoints <- createCutPoints(.self)
   
-                  tree <- buildTree(strsplit(gsub("\\.", "\\. ", state[[1]]@trees[treeNum]), " ", fixed = TRUE))
+                  tree <- buildTree(strsplit(gsub("\\.", "\\. ", state[[1]]@trees[treeNum]), " ", fixed = TRUE)[[1]])
                   tree$remainder <- NULL
                   
                   tree$indices <- seq_len(nrow(data@x))
