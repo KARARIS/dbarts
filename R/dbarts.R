@@ -568,7 +568,7 @@ dbartsSampler <-
                   tree$indices <- seq_len(nrow(data@x))
                   tree <- fillObservationsForNode(tree, .self, cutPoints)
                   
-                  tree <- fillPlotInfoForNode(tree, .self, state[[1]]@treefits[,treeNum])
+                  tree <- fillPlotInfoForNode(tree, .self, state[[1]]@treeFits[,treeNum])
                   
                   maxDepth <- getMaxDepth(tree)
                   
